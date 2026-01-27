@@ -1,6 +1,6 @@
 package io.github.henriquemichelini.service;
 
-import io.github.henriquemichelini.client.AIClient;
+import io.github.henriquemichelini.client.HuggingFaceClient;
 import io.github.henriquemichelini.dto.EmailResponseDTO;
 import io.github.henriquemichelini.exception.EmailProcessingException;
 import io.github.henriquemichelini.exception.UnsupportedFileTypeException;
@@ -15,7 +15,7 @@ import org.springframework.web.multipart.MultipartFile;
 @RequiredArgsConstructor
 public class EmailClassificationService {
 
-    private final AIClient aiClient;
+    private final HuggingFaceClient aiClient;
     private final FileExtractor fileExtractor;
 
     public EmailResponseDTO classifyEmail(String emailText) {
@@ -27,7 +27,7 @@ public class EmailClassificationService {
 
         String processedText = preprocessText(emailText);
 
-        EmailResponseDTO response = aiClient.classifyAndGenerateResponse(processedText);
+        EmailResponseDTO response = aiClient.classifyWithHuggingFace(processedText);
 
         log.debug("Classificação concluída: {}", response.categoria());
 
