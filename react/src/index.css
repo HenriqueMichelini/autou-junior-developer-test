@@ -1,3 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+    --font-family-sans: Inter, system-ui, -apple-system, sans-serif;
+    --font-size-header_title: 128;
+    --font-size-header_subtitle: 32;
+    --color-primary-100: #ffffff;
+    --color-surface: #e2e2e2;
+    --color-card-pdf: #d95f5f;
+    --color-card-txt: #94c4e6;
+    --color-card-plain: #d9d9d9;
+    --color-text-default: #000000;
+    --color-text-muted: #e3e3e3;
+    --color-text-positive: #16a34a;
+    --color-text-negative: #dc2626;
+}

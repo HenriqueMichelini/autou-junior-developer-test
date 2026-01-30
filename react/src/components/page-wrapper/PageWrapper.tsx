@@ -2,7 +2,7 @@ import Header from "./header/header";
 
 function PageWrapper() {
   return (
-    <div className="flex flex-col min-h-screen bg-surface">
+    <div className="flex flex-col bg-surface">
       <Header title="Email" subtitle="subtitle" />
     </div>
   );
