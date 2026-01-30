@@ -2,8 +2,6 @@
 
 @theme {
     --font-family-sans: Inter, system-ui, -apple-system, sans-serif;
-    --font-size-header_title: 128;
-    --font-size-header_subtitle: 32;.;
     --color-primary-100: #ffffff;
     --color-surface: #e2e2e2;
     --color-card-pdf: #d95f5f;
