@@ -1,9 +1,11 @@
 import Header from "./header/header";
+import ContentArea from "./content-area/ContentArea";
 
 function PageWrapper() {
   return (
     <div className="flex flex-col">
       <Header title="Email" subtitle="subtitle" />
+      <ContentArea />
     </div>
   );
 }

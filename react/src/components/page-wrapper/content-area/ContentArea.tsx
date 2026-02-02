@@ -1,12 +1,13 @@
 import TextField from "./form-section/text-field/TextField";
 
-type ContainerParts = {
-  submitContainer: SubmitContainer(),
+// type ContainerParts = {
+//   submitContainer: SubmitContainer;
+// };
 
-}
-
-function Container() {
-  return <div className="flex flex-row gap-16 bg-surface rounded-sm"></div>;
+function ContainerArea() {
+  return (
+    <div className="flex flex-row gap-16 w-full h-full bg-surface rounded-sm"></div>
+  );
 }
 
 export default Container;
